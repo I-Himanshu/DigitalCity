@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './home'
 import '../../styles/globals.css'
-import Navbar from 'components/Navbar'
+import Navbar from 'components/home/Navbar'
 type Props = {}
 
 export default function index({ }: Props) {
