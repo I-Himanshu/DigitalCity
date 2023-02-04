@@ -2,7 +2,7 @@ import React from 'react'
 import { TfiMoney } from "react-icons/tfi";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { FaFire } from "react-icons/fa";
-export default function Details() {
+export default function Home() {
     return (
         <>
             <div className="grid grid-cols-3 justify-items-center mt-[7vmin] px-[5vmin]">

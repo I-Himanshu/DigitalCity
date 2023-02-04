@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../styles/globals.css"
-function SideNavbar() {
+function SideNavbar({setDashboardPage}) {
     return (
         <>
             <div className="w-[20%] h-[100vh] shadow-md px-[1vmin] bg-[#3852CE]/60 pt-[3vmin] overflow-y-scroll scrollbar-none">
@@ -12,7 +12,7 @@ function SideNavbar() {
                 </div>
                 <ul className="relative">
                     <li className="relative">
-                        <a className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"> <i className="fa-solid fa-house text-[2.7vmin] mr-[2vmin]"></i> Home</a>
+                        <a onClick={()=>setDashboardPage("home")} className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"> <i className="fa-solid fa-house text-[2.7vmin] mr-[2vmin]"></i> Home</a>
                     </li>
                     <li className="relative">
                         <a className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"> <i className="fa-solid fa-cloud-sun text-[2.7vmin] mr-[2vmin]"></i> Weather</a>
@@ -20,7 +20,7 @@ function SideNavbar() {
                     <li className="relative">
                         <a className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"><i className="fa-solid fa-newspaper text-[2.7vmin] mr-[2vmin]"></i> Local News</a>
                     </li>
-                    <li className="relative">
+                    <li onClick={()=>setDashboardPage("vendor")} className="relative">
                         <a className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"><i className="fa-solid fa-shop text-[2.7vmin] mr-[2vmin]"></i> Vendor</a>
                     </li>
                     <li className="relative">
