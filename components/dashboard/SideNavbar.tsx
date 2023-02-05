@@ -14,7 +14,7 @@ function SideNavbar({setDashboardPage}) {
                     <li className="relative">
                         <a onClick={()=>setDashboardPage("home")} className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"> <i className="fa-solid fa-house text-[2.7vmin] mr-[2vmin]"></i> Home</a>
                     </li>
-                    <li className="relative">
+                    <li onClick={()=>setDashboardPage("weather")}  className="relative">
                         <a className="flex items-center robot text-[2.7vmin] mt-[1.8vmin] py-[1.2vmin] px-[1.8vmin] h-[8vmin] overflow-hidden text-white/80 text-ellipsis whitespace-nowrap rounded hover:text-[#3852ce] font-normal hover:bg-gray-100 transition duration-300 ease-in-out" href="#!"> <i className="fa-solid fa-cloud-sun text-[2.7vmin] mr-[2vmin]"></i> Weather</a>
                     </li>
                     <li className="relative">

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import '../../styles/globals.css'
 import SideNavbar from 'components/dashboard/SideNavbar'
 import Vendor from 'components/dashboard/Vendor'
+import Weather from 'components/dashboard/weather/Weather'
 function dashboard() {
   const [dashboardPage, setDashboardPage] = useState("home");
 
@@ -14,6 +15,9 @@ function dashboard() {
       break;
     case "vendor":
       currentPage = <Vendor />
+      break;
+    case "weather":
+        currentPage = <Weather city={"Delhi"}/>
   }
   return (
     <>
